@@ -1,0 +1,216 @@
+
+/* ESTILOS GENERALES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f3fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ENCABEZADO Y MENU */
+header {
+    background-color: #7463a8;
+    padding: 20px 40px;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #f5c6e8;
+}
+
+/* SECCIONES */
+section {
+    padding: 60px 10%;
+    scroll-margin-top: 20px;
+}
+
+section h2 {
+    color: #7463a8;
+    margin-bottom: 20px;
+}
+
+/* INICIO */
+#inicio {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #e8e1f5;
+}
+
+#inicio h1 {
+    font-size: 36px;
+    color: #574780;
+}
+
+#inicio h2 {
+    margin-top: 10px;
+}
+
+/* HABILIDADES */
+#habilidades ul {
+    margin-top: 15px;
+    padding-left: 25px;
+}
+
+/* PROYECTOS */
+#proyectos article {
+    background-color: white;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+#proyectos article h3 {
+    color: #7463a8;
+    margin-bottom: 10px;
+}
+
+/* CONTACTO */
+#contacto {
+    text-align: center;
+    background-color: #e8e1f5;
+}
+
+/* PIE DE PAGINA */
+footer {
+    background-color: #7463a8;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* DISEÑO PARA CELULARES */
+@media (max-width: 600px) {
+    header {
+        padding: 20px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #inicio h1 {
+        font-size: 28px;
+    }
+
+    section {
+        padding: 40px 20px;
+    }
+}
+
+
+/* MODO OSCURO */
+.modo-oscuro {
+    background-color: #1e1e2e;
+    color: white;
+}
+
+.modo-oscuro header,
+.modo-oscuro footer {
+    background-color: #29243d;
+}
+
+.modo-oscuro #inicio,
+.modo-oscuro #contacto {
+    background-color: #34304a;
+}
+
+.modo-oscuro section h2,
+.modo-oscuro #inicio h1 {
+    color: #d5c5ff;
+}
+
+.modo-oscuro #proyectos article {
+    background-color: #34304a;
+    color: white;
+}
+
+.modo-oscuro #proyectos article h3 {
+    color: #d5c5ff;
+}
+
+/* FOTO DE PERFIL */
+.foto-perfil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #7463a8;
+    margin-bottom: 20px;
+}
+
+/* IMAGENES DE RIFAGO */
+.imagenes-rifago {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.imagenes-rifago img {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    background-color: #f5f3fa;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.10);
+}
+
+/* IMAGENES DE RIFAGO */
+.imagenes-rifago {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.imagenes-rifago img {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    border-radius: 10px;
+    background-color: #f5f3fa;
+}
+
+/* ADAPTACION PARA CELULARES */
+@media (max-width: 600px) {
+    .imagenes-rifago {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
